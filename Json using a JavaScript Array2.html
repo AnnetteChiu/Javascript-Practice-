@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Json using a JavaScript Array</title>
+    <script>
+        window.onload = function () {
+            //Array
+            var data = {
+                "employees": [
+                        {
+                            "firstName": "Maria",
+                            "lastName": "Smith",
+                            "joined": "5/1/2015",
+                            "salary": 75000
+                        },
+                        {
+                            "firstName": "George",
+                            "lastName": "Pefanis",
+                            "joined": "6/15/2013",
+                            "salary": 25000
+                        }
+                ]
+            }
+
+            document.getElementById("placeholder").innerHTML = data.employees[0].firstName + " " + data.employees[0].lastName + " joined our organization in " + data.employees[0].joined + " and has a salary of " + data.employees[0].salary + ".";
+        }
+    </script>
+</head>
+<body>
+    <div id="placeholder"></div>
+</body>
+</html>
