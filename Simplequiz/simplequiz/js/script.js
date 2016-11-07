@@ -18,7 +18,7 @@ function submitAnswers(){
 	}
 	
 	// Set Correct Answers
-	var answers = ["b","a","d","b","d"];
+	var answers = ["c","a","a","b","d"];
 	
 	// Check Answers
 	for(i = 1; i <= total;i++){
