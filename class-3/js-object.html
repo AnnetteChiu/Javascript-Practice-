@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Working with JavaScript Objects</title>
+ </head>
+ <body>
+   <script>
+    var actor = new Object();
+    actor.first			=	"George";
+    actor.middle		=	"T";
+    actor.last			=	"Clooney";
+    actor.salutation	=	"Actor";
+    
+    var address = {
+      street:"123 Beverly Hills Ave",
+			city:"Los Angeles",
+			state:"CA",
+			zip:"90210"
+      
+    };
+
+    document.write("<h3>Actor:</h3>");
+    document.write("first = " + actor.first + "<br>");
+    document.write("middle = " + actor.middle + "<br>");
+    document.write("last = " + actor.last + "<br>");
+    document.write("salutation = " + actor.salutation + "<br>");
+    document.writeln("<strong>" + actor.first + " " + actor.middle + ". " + actor.last + " is a great actor.</strong>");
+    
+    function printObj(myObj){
+	    for(myProperty in myObj){
+	      document.write(myProperty + " = " + myObj[myProperty] + "<br>");
+	    }
+    }
+    
+    document.write("<h2>Address:</h2>");
+    printObj(address);
+
+    document.write("<h2>Document:</h2>");
+    printObj(document);
+    
+    document.write("<h2>Nav:</h2>");
+    printObj(location);
+   </script>
+ </body>
+</html>

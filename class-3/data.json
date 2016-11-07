@@ -1,0 +1,29 @@
+{"users":[
+        {
+            "firstName":"Ray",
+            "lastName":"Villalobos",
+            "joined": {
+                "month":"January",
+                "day":12,
+                "year":2012
+            }
+        },
+        {
+            "firstName":"John",
+            "lastName":"Jones",
+            "joined": {
+                "month":"April",
+                "day":28,
+                "year":2010
+            }
+        },
+        {
+            "firstName":"Carl",
+            "lastName":"Bell",
+            "joined": {
+                "month":"June",
+                "day":19,
+                "year":2009
+            }
+        }
+]}

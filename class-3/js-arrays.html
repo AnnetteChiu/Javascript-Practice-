@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Working with Arrays</title>
+ </head>
+ <body>
+   <script>
+      var day = new Array();
+      day[0] = "Sunday";
+      day[1] = "Monday";
+      day[2] = "Tuesday";
+      day[3] = "Wednesday";
+      day[4] = "Thursday";
+      day[5] = "Friday";
+      day[6] = "Saturday";
+      
+      var day_abbr = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
+      
+      var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      
+      document.write("<h3>Days of the Week</h3>");
+      document.write("<em>0 = </em>" + day[0] + "<br>");
+      document.write("<em>1 = </em>" + day[1] + "<br>");
+      document.write("<em>2 = </em>" + day[2] + "<br>");
+      document.write("<em>3 = </em>" + day[3] + "<br>");
+      document.write("<em>4 = </em>" + day[4] + "<br>");
+      document.write("<em>5 = </em>" + day[5] + "<br>");
+      document.write("<em>6 = </em>" + day[6] + "<br>");
+      
+      function printArray(myArray){
+	      for(var i=0; i<myArray.length; i++){
+	        document.write("<em>" + i + " = </em>" + myArray[i] + "<br>");
+	      }
+      }
+      
+     document.write("<h3>Days of the Week (abbr)</h3>");
+     printArray(day_abbr);
+     document.write("<h3>Months of the year</h3>");
+     printArray(month);
+   </script>
+ </body>
+</html>
+
+
+

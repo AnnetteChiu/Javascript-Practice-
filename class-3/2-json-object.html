@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Json using a JavaScript Object</title>
+    <script>
+        window.onload = function () {
+            //Object
+            var employee = {
+                "firstName": "Maria",
+                "lastName": "Smith",
+                "joined": "5/1/2015",
+                "salary": 75000
+            };
+            document.getElementById("placeholder").innerHTML = employee.firstName + " " + employee.lastName + " joined our organization in " + employee.joined + " and has a salary of " + employee.salary + ".";
+        }
+    </script>
+</head>
+<body>
+    <div id="placeholder"></div>
+</body>
+</html>
