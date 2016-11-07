@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>More JavaScript Loops</title>
+  <style>
+      input[type="text"]{
+         width: 25px;
+         border: 1px solid #CCC;
+      }
+      td{
+        border:1px solid #CCC;
+        padding:2px;
+      }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#btn').click(function(){
+        //alert('hey good looking!');
+        var r = document.getElementById('rows').value;
+        var c = document.getElementById('cols').value;
+        //alert('rows:' + r.value + ' cols:' + c.value);
+        var t = '<table>';
+        for(var i=1; i<=r; i++){
+          t += '<tr>';
+          for(var j=1; j<=c; j++){
+            t += '<td>Column:' + j + ' Row:' + i + '</td>';
+          }
+          t += '</tr>';
+        }
+        t += '</table>';
+        //alert(t);
+        document.getElementById('rtn').innerHTML = t;
+      });
+    });
+  </script>
+ </head>
+ <body>
+   <h4>Lets' create a dynamic table with <input type="text" id="rows" /> rows and <input type="text" id="cols" /> columns!</h4>
+   <input type="button" id="btn" value="create" />
+   <div id="rtn"></div>
+ </body>
+</html>
